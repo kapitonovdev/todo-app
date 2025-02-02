@@ -26,4 +26,7 @@ export class ToDoModel implements IToDoModel{
         this._items = this._items.filter(item => item.id !== id)
     }
 
+    getItem(id: string) {
+      return this._items.find(item => item.id === id)
+    }
 }
