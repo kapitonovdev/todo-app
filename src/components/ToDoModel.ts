@@ -26,7 +26,13 @@ export class ToDoModel implements IToDoModel{
         this._items = this._items.filter(item => item.id !== id)
     }
 
-    getItem(id: string) {
-      return this._items.find(item => item.id === id)
+    editItem (id: string, name: string) {
+        const editedItem = this._items.find(item => item.id === id);
+        editedItem.name = name;
     }
+    
+    getItem(id: string) {
+        return this._items.find(item => item.id === id)
+    }
+
 }
