@@ -13,13 +13,18 @@
   margin: 0;
   color: white;
   text-align: center;
-  margin-bottom: 54px;
+  padding-block-start: 40px;
 }
 
 .todos {
   width: 700px;
   margin: 0 auto;
-  padding: 96px 0 12px;
+  padding: 40px 0 12px;
+}
+
+.todo-form-container {
+  display: flex;
+  justify-content: center;
 }
 
 .todo-form {
@@ -55,7 +60,7 @@
 .todos__list {
   width: 700px;
   margin: 0 auto;
-  padding: 96px 0 12px;
+  padding: 40px 0 12px;
 }
 
 .todo-item {
